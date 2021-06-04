@@ -1,0 +1,43 @@
+.employee-detail{
+  &.card{
+    flex-direction: row;
+    border: none;
+    box-shadow: 0.3em 0.3em 1rem #b1b1b14d;
+  }
+  .card-img-top{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem;
+  }
+  .card-text{
+    margin: .5rem 0 0 0;
+    font-size: 15px;
+    color:#6c757d;
+    span{
+      color: #000;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &.card{
+      margin: .5rem;
+      text-align: center;
+      flex-direction: column;    
+      .card-img-top{
+        width: 8rem;
+        height: 8rem;
+        padding: 1rem;
+        margin: auto;
+      }
+      .react-stars{
+        margin: auto;
+      }
+    }
+  }
+}

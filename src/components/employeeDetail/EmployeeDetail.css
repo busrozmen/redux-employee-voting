@@ -1,0 +1,59 @@
+.employee-detail.card {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: none;
+  -webkit-box-shadow: 0.3em 0.3em 1rem #b1b1b14d;
+          box-shadow: 0.3em 0.3em 1rem #b1b1b14d;
+}
+
+.employee-detail .card-img-top {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.employee-detail .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+  padding: 1rem;
+}
+
+.employee-detail .card-text {
+  margin: .5rem 0 0 0;
+  font-size: 15px;
+  color: #6c757d;
+}
+
+.employee-detail .card-text span {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .employee-detail.card {
+    margin: .5rem;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .employee-detail.card .card-img-top {
+    width: 8rem;
+    height: 8rem;
+    padding: 1rem;
+    margin: auto;
+  }
+  .employee-detail.card .react-stars {
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=EmployeeDetail.css.map */

@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #fbd84a;
+  margin-bottom: 35px;
+  padding: 15px 100px;
+}
+
+.navbar .navbar-brand {
+  color: #484646;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.navbar .navbar-brand span {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 15px;
+  }
+}
+/*# sourceMappingURL=App.css.map */

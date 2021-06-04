@@ -1,0 +1,57 @@
+.employee{
+  &.card{
+    flex-direction: row;    
+    margin: 1rem 2rem;
+    border: none;
+    box-shadow: 0.3em 0.3em 1rem #b1b1b14d;
+    .card-img-top{
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      padding: 1rem;
+    }
+    .card-body{
+      display: flex;
+      gap: 5rem;
+      padding: 3rem 1rem;
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem;
+      }
+      .card-title{
+        height: 2rem;
+      }
+      .card-text{
+        color:#2f2f2f;
+        font-size: 15px;
+        padding-top: 1rem;
+      }
+      .detail-wrapper{
+        padding-top: 1rem;
+        font-size: 15px;
+        color: #333;
+        svg{
+          margin: -3px 0 0 5px;
+        }
+      }
+      .react-stars{
+        padding-top: .5rem;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      margin: .5rem;
+      text-align: center;
+      flex-direction: column;    
+      .card-img-top{
+        width: 8rem;
+        height: 8rem;
+        padding: 1rem;
+        margin: auto;
+      }
+      .react-stars{
+        margin: auto;
+      }
+    }
+  }
+}

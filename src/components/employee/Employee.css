@@ -1,0 +1,81 @@
+.employee.card {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem 2rem;
+  border: none;
+  -webkit-box-shadow: 0.3em 0.3em 1rem #b1b1b14d;
+          box-shadow: 0.3em 0.3em 1rem #b1b1b14d;
+}
+
+.employee.card .card-img-top {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.employee.card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+  padding: 3rem 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .employee.card .card-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+    padding: 1rem;
+  }
+}
+
+.employee.card .card-body .card-title {
+  height: 2rem;
+}
+
+.employee.card .card-body .card-text {
+  color: #2f2f2f;
+  font-size: 15px;
+  padding-top: 1rem;
+}
+
+.employee.card .card-body .detail-wrapper {
+  padding-top: 1rem;
+  font-size: 15px;
+  color: #333;
+}
+
+.employee.card .card-body .detail-wrapper svg {
+  margin: -3px 0 0 5px;
+}
+
+.employee.card .card-body .react-stars {
+  padding-top: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .employee.card {
+    margin: .5rem;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .employee.card .card-img-top {
+    width: 8rem;
+    height: 8rem;
+    padding: 1rem;
+    margin: auto;
+  }
+  .employee.card .react-stars {
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=Employee.css.map */
